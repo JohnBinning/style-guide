@@ -1,0 +1,25 @@
+{
+  "name": "pattrn-party",
+  "version": "1.0.0",
+  "description": "Accordion tabs, flexible cards, and header bar",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss main.scss main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnBinning/pattrn-party.git"
+  },
+  "keywords": [],
+  "author": "John Binning",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBinning/pattrn-party/issues"
+  },
+  "homepage": "https://github.com/JohnBinning/pattrn-party#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

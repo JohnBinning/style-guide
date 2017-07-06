@@ -1,0 +1,24 @@
+$teal: #34D1D1;
+$darkPurple: #2F2235;
+$offWhite: #F2F2F2;
+
+header {
+  background: $darkPurple;
+  color: $teal;
+  span {
+    color: $offWhite;
+  }
+}
+
+.accordion-section {
+  display: flex;
+  width: 80%;
+  margin: 10%;
+  .tab-label {
+    background-color: coral;
+    border: 1px solid blue;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+  }
+}

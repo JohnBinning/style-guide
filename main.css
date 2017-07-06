@@ -1,0 +1,16 @@
+header {
+  background: #2F2235;
+  color: #34D1D1; }
+  header span {
+    color: #F2F2F2; }
+
+.accordion-section {
+  display: flex;
+  width: 80%;
+  margin: 10%; }
+  .accordion-section .tab-label {
+    background-color: coral;
+    border: 1px solid blue;
+    width: 100%;
+    text-align: center;
+    height: 50px; }
