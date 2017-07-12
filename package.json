@@ -21,5 +21,8 @@
   "homepage": "https://github.com/JohnBinning/pattrn-party#readme",
   "devDependencies": {
     "node-sass": "^4.5.3"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0"
   }
 }
