@@ -1,24 +1,60 @@
-tabs = document.querySelectorAll('.tab-top')
+const allTabSelect = document.querySelectorAll('.tab-select');
+const allTabContent = document.querySelectorAll('.tab-content');
+//
+// tabs.forEach((header) => {
+//   header.addEventListener('click', function() {
+//     const tabContent = this.nextElementSibling;
+//     removeAllVisibility();
+//     tabContent.classList.add('visible-tab');
+//     this.classList.add('visible-top');
+//   });
+// });
+//
+const removeTopTabClass = () => {
+  allTabSelect.forEach((tab) => {
+      tab.classList.remove('visible-top');
+  });
+};
 
-tabs.forEach((header) => {
-  header.addEventListener('click', function() {
-    console.log('clicked');
-    const tabContent = this.nextElementSibling
-    if(tabContent.classList.contains('visible-tab')) {
-      tabContent.classList.remove('visible-tab')
-      this.classList.remove('visible-top')
-    } else {
-      removeAllVisibility()
-      tabContent.classList.add('visible-tab')
-      this.classList.add('visible-top')
-    }
+const removeContentClass = () => {
+  allTabContent.forEach((tab) => {
+      tab.classList.remove('visible-content');
+  });
+};
 
-  })
-})
+const tabOne = document.querySelector('.tab-one')
+const tabTwo = document.querySelector('.tab-two')
+const tabThree = document.querySelector('.tab-three')
+const tabFour = document.querySelector('.tab-four')
+const tabOneContent = document.querySelector('.tab-one-content')
+const tabTwoContent = document.querySelector('.tab-two-content')
+const tabThreeContent = document.querySelector('.tab-three-content')
+const tabFourContent = document.querySelector('.tab-four-content')
 
-const removeAllVisibility = function() {
-  tabs.forEach((tab) => {
-      tab.classList.remove('visible-top')
-      tab.nextElementSibling.classList.remove('visible-tab')
-  })
-}
+tabOne.addEventListener('click', () => {
+  removeTopTabClass();
+  removeContentClass();
+  tabOne.classList.add('visible-top');
+  tabOneContent.classList.add('visible-content');
+});
+
+tabTwo.addEventListener('click', () => {
+  removeTopTabClass();
+  removeContentClass();
+  tabTwo.classList.add('visible-top');
+  tabTwoContent.classList.add('visible-content');
+});
+
+tabThree.addEventListener('click', () => {
+  removeTopTabClass();
+  removeContentClass();
+  tabThree.classList.add('visible-top');
+  tabThreeContent.classList.add('visible-content');
+});
+
+tabFour.addEventListener('click', () => {
+  removeTopTabClass();
+  removeContentClass();
+  tabFour.classList.add('visible-top');
+  tabFourContent.classList.add('visible-content');
+});
