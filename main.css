@@ -87,3 +87,7 @@ a {
   margin: 40px 35% 20px 35%; }
   a:hover {
     color: #34D1D1; }
+
+@media screen and (max-width: 800px) {
+  .tab-content {
+    flex-direction: column; } }

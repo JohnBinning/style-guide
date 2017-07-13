@@ -115,3 +115,11 @@ a {
     color: $teal;
   }
 }
+
+@media screen and (max-width: 800px) {
+
+  .tab-content {
+    flex-direction: column;
+  }
+  
+}
