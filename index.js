@@ -1,15 +1,14 @@
 const allTabSelect = document.querySelectorAll('.tab-select');
 const allTabContent = document.querySelectorAll('.tab-content');
-//
-// tabs.forEach((header) => {
-//   header.addEventListener('click', function() {
-//     const tabContent = this.nextElementSibling;
-//     removeAllVisibility();
-//     tabContent.classList.add('visible-tab');
-//     this.classList.add('visible-top');
-//   });
-// });
-//
+const tabOne = document.querySelector('.tab-one')
+const tabTwo = document.querySelector('.tab-two')
+const tabThree = document.querySelector('.tab-three')
+const tabFour = document.querySelector('.tab-four')
+const tabOneContent = document.querySelector('.tab-one-content')
+const tabTwoContent = document.querySelector('.tab-two-content')
+const tabThreeContent = document.querySelector('.tab-three-content')
+const tabFourContent = document.querySelector('.tab-four-content')
+
 const removeTopTabClass = () => {
   allTabSelect.forEach((tab) => {
       tab.classList.remove('visible-top');
@@ -21,15 +20,6 @@ const removeContentClass = () => {
       tab.classList.remove('visible-content');
   });
 };
-
-const tabOne = document.querySelector('.tab-one')
-const tabTwo = document.querySelector('.tab-two')
-const tabThree = document.querySelector('.tab-three')
-const tabFour = document.querySelector('.tab-four')
-const tabOneContent = document.querySelector('.tab-one-content')
-const tabTwoContent = document.querySelector('.tab-two-content')
-const tabThreeContent = document.querySelector('.tab-three-content')
-const tabFourContent = document.querySelector('.tab-four-content')
 
 tabOne.addEventListener('click', () => {
   removeTopTabClass();
