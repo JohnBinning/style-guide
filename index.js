@@ -50,7 +50,7 @@ tabThree.forEach( tab => {
       tab.classList.add('visible-top');
       tabThreeContent.forEach( tabContent => {
         tabContent.classList.add('visible-content');
-      })
+      });
     });
 });
 
@@ -61,6 +61,20 @@ tabFour.forEach( tab => {
       tab.classList.add('visible-top');
       tabFourContent.forEach( tabContent => {
         tabContent.classList.add('visible-content');
-      })
+      });
     });
+});
+
+const toggle = document.querySelector('.nav-toggle');
+const navContent = document.querySelector('.nav-content');
+
+toggle.addEventListener('click', () => {
+  if(document.documentElement.clientWidth > 700) {
+    return;
+
+  } else if (navContent.classList.value.includes('vis-nav')) {
+    navContent.classList.remove('vis-nav');
+  } else {
+    navContent.classList.add('vis-nav');
+  }
 });

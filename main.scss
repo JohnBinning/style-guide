@@ -107,10 +107,12 @@ header {
   max-height: 200px;
 }
 
-.accordion a {
+a {
   color: $white;
   background-color: $darkPurple;
-  width: 30%;
+  width: 25%;
+  max-height: 30px;
+  display: block;
   padding: 20px;
   text-align: center;
   margin: 40px 35% 20px 35%;
@@ -167,7 +169,55 @@ header {
   height: 300px;
 }
 
+//nav/header
 
+.header-section {
+  margin-bottom: 100px;
+}
+
+.search {
+  width: 180px;
+  height: 40px;
+  border: 1px solid $darkGrey;
+}
+
+nav {
+  margin-bottom: 50px;
+  width: 88%;
+  margin-left: 6%;
+  display: flex;
+  padding: 1.5%;
+  background-color: $lightGrey;
+  // justify-content: space-around;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  width: 110%;
+}
+
+.nav-link {
+  padding: 0 5%;
+  font-weight: $light;
+
+}
+
+.nav-toggle {
+  display: flex;
+}
+
+.nav-menu-text {
+  display: none;
+  font-weight: $light;
+}
+
+.nav-img {
+  width: 70px;
+  height: 70px;
+  // border-radius: 50%;
+  // border: 1px solid $darkGrey;
+}
 
 @media screen and (max-width: 800px) {
 
@@ -213,8 +263,53 @@ header {
     flex-direction: column;
   }
 
+  .tab-content {
+    border: none;
+  }
+
   .mobile-tab {
     display: flex;
+    flex-direction: column;
+  }
+
+  //nav
+
+  .nav-content {
+    display: none;
+    background-color: $offWhite;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .nav-menu-text {
+    display: flex;
+    margin-left: 60%;
+  }
+
+  .nav-img {
+    margin-left: 10%;
+  }
+
+  .nav-link {
+    margin: 5%;
+  }
+
+  .vis-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-toggle {
+    width: 100%;
+    align-items: center;
+  }
+
+  .search {
+    margin-bottom: 5%;
+  }
+
+  nav {
     flex-direction: column;
   }
 
